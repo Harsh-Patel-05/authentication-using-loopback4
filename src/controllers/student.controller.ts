@@ -33,7 +33,7 @@ export class StudentController {
       content: {
         'application/json': {
           schema: {
-            required: ['name', 'email','classId'],
+            required: ['name', 'email', 'classId'],
             properties: {
               name: {
                 type: 'string',
@@ -44,7 +44,7 @@ export class StudentController {
                 maxLength: 254,
                 minLength: 5,
               },
-              classId:{
+              classId: {
                 type: 'string',
               }
             }
@@ -198,7 +198,7 @@ export class StudentController {
                 maxLength: 254,
                 minLength: 5,
               },
-              classId:{
+              classId: {
                 type: 'string',
               }
             }
@@ -209,7 +209,7 @@ export class StudentController {
     payload: {
       name: 'string'
       email: 'string'
-      classId:'string'
+      classId: 'string'
     }
   ) {
     const data = await this.studentRepository.findOne({
